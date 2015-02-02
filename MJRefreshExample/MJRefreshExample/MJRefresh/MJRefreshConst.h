@@ -24,7 +24,7 @@
 // 图片路径
 #define MJRefreshSrcName(file) [@"MJRefresh.bundle" stringByAppendingPathComponent:file]
 
-UIKIT_EXTERN const CGFloat MJRefreshViewHeight;
+UIKIT_EXTERN CGFloat MJRefreshViewHeight;
 UIKIT_EXTERN const CGFloat MJRefreshFastAnimationDuration;
 UIKIT_EXTERN const CGFloat MJRefreshSlowAnimationDuration;
 

@@ -51,6 +51,7 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
+    MJRefreshViewHeight = MJRefreshHeaderHeight;
     if (self = [super initWithFrame:frame]) {
         self.pullToRefreshText = MJRefreshHeaderPullToRefresh;
         self.releaseToRefreshText = MJRefreshHeaderReleaseToRefresh;
@@ -197,7 +198,7 @@
                 self.lastUpdateTime = [NSDate date];
                 
                 [UIView animateWithDuration:MJRefreshSlowAnimationDuration animations:^{
-#warning 这句代码修复了，top值不断累加的bug
+//#warning 这句代码修复了，top值不断累加的bug
                     if (self.scrollViewOriginalInset.top == 0) {
                         self.scrollView.mj_contentInsetTop = 0;
                     } else if (self.scrollViewOriginalInset.top == self.scrollView.mj_contentInsetTop) {
