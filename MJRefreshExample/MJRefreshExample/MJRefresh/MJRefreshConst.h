@@ -39,3 +39,6 @@ UIKIT_EXTERN NSString *const MJRefreshHeaderTimeKey;
 
 UIKIT_EXTERN NSString *const MJRefreshContentOffset;
 extern NSString *const MJRefreshContentSize;
+
+#define MJRefreshHeaderHeight  64.0     //MJRefreshHeader 高度
+#define MJRefreshFooterHeight  44.0     //MJRefreshFooter 高度
